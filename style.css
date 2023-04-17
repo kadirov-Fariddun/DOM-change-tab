@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #1a78b6;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* project number one */
+
+.card-item{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    max-width: 480px;
+    width: 100%;
+    margin: 0;
+}
+
+.card-item ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-item li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight:700;
+    font-family:sans-serif;
+    margin: 0 5px;
+    color:rgb(0,0,0,.4);
+    letter-spacing: .3px;
+    cursor: pointer;
+}
+
+.card-item li:first-child{
+    margin-left: 0;
+}
+.card-item li.active{
+    font-size: 12px;
+    color: #000;
+}
+.form-inputs{
+    display: flex;
+}
+.form-inputs input[type='number']{
+    padding: 10px 0 10px 0;
+    max-width: 350px;
+    width: 100%;
+    margin-right: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+.form-inputs input[type='number']::placeholder{
+    font-weight: 600;
+}
+
+.form-inputs button{
+    font-weight: 600;
+    padding-right:10px;
+    padding-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-inputs button:active{
+    color: orange;
+}
+
+
+
+/** card-item-two */
+.card-item-two{
+    display: none;
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.card-flex{
+    display: flex;
+}
+.card-flex ul{
+    display: block;
+    margin-right: 50px;
+    width: 50%;
+}
+.card-flex ul li{
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.card-flex ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.card-flex ul li span{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #949393;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card-flex ul li.active span{
+    color: #fff;
+    background-color: #1a78b6;
+}
+
+.card-flex ul li p{
+    color: #949393;
+}
+.card-flex ul li.active p{
+    color: #000;
+    font-weight: 700;
+}
+
+.card-title-btn .title{
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.card-two-btns{
+    display: flex;
+}
+
+.card-two-btn-back{
+    margin-right: 40px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.card-two-btn-back:active{
+color: orange;
+}
+.card-two-btn{
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card-two-btn:active{
+    color: orange;
+}
+
+
+
+
+/** switch */
+.rocker-small{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.switches{
+    transition: .3s;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #000;
+    opacity: .7;
+}
+
+@media(max-width:575px){
+    .card-item{
+        max-width: 400px;
+        padding: 10px 0;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+
+    .form-inputs input[type='number']{
+        margin: 0 auto;
+        margin-bottom: 10px;    
+    }
+    .form-inputs button{
+        padding: 0;
+        background-color: rgb(201, 151, 59);
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+        height: 30px;
+        border-radius: 30px;
+    }
+    .card-item ul{
+        justify-content: space-around;
+    }
+   
+    #root{
+        text-align: center;
+        font-weight: 700;
+    }
+   
+    /**.card-item-two**/
+    .card-item-two{
+        max-width: 360px;
+        width: 100%;
+        padding: 20px;
+    } 
+    .card-flex{
+        flex-direction: column;
+    }
+    .card-flex ul{
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        padding: 0 0 20px 0;
+    }
+    .card-title-btn .title{
+        margin-bottom: 20px;
+    }
+    
+}
+@media(max-width:400px){
+    .card-item{
+        max-width: 320px;
+        padding: 10px 0;
+    }
+   
+
+    .form-inputs input[type='number']{
+        margin: 0 auto;
+        max-width: 280px;
+        margin-bottom: 10px;    
+    }
+    .form-inputs button{
+        max-width: 280px;
+    }
+    .card-item ul{
+        justify-content: space-around;
+    }
+    .card-item ul li{
+        font-size: 10px;
+    }
+   
+    #root{
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+    }
+   
+
+      /**.card-item-two**/
+      .card-item-two{
+        max-width: 280px;
+        width: 100%;
+    }
+    .card-flex ul{
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        padding: 0 0 20px 0;
+        width: 100%;
+    }
+    .card-title-btn .title{
+        margin-bottom: 20px;
+    }
+    .card-flex ul li.active p{
+        white-space: nowrap;
+    }
+    
+}

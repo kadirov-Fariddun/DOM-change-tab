@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-item">
+            <div class="form-inputs">
+                <input type="number" placeholder="Enter tab index" id="tabulation-input">
+                <button id="tabulation-btn">change tab</button>
+            </div>
+            <ul>
+                <li class="active">positive</li>
+                <li>negative</li>
+                <li>neutral</li>
+            </ul>
+            <div id="root">
+                <span>Positive</span>
+                content
+            </div>
+        </div>
+
+        <div class="card-item-two">
+            <div class="card-flex">
+                <ul>
+                    <li class="active">
+                        <span>1</span>
+                        <p>Choose title</p>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <p>Choose description</p>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <p>Confirm data</p>
+                    </li>
+                </ul>
+                <div class="card-title-btn">
+                    <div class="title">
+                        Choose title content
+                    </div>
+                    <div class="card-two-btns">
+                        <button class="card-two-btn-back">Back</button>
+                        <button class="card-two-btn">Sumbit title</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rocker-small">
+        <span>1</span>
+        <span>2</span>
+        <span class="switches"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
